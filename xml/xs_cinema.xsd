@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:simpleType name="jour">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="Lun"/>
+		<xs:enumeration value="Mar"/>
+		<xs:enumeration value="Mer"/>
+		<xs:enumeration value="Jeu"/>
+		<xs:enumeration value="Ven"/>
+		<xs:enumeration value="Sam"/>
+		<xs:enumeration value="Dim"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:element name="jours">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="jour" minOccurs="1" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:attribute name="libelle" type="jour"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="heures" >
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="heure" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<!-- FILM -->
+
+<xs:element name="film"> 
+	<xs:complexType>
+		<xs:sequence>
+
+			<xs:element name="titre" type="xs:string"/>
+			<xs:element name="genre" type="xs:string"/>
+			<xs:element name="duree" type="xs:string"/>
+			<xs:element name="realisateur" type="xs:string"/>
+			<xs:element name="annee" type="xs:gYear"/>
+			<xs:element name="langue" type="xs:string"/>
+
+			<xs:element name="acteurs">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="acteur" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+
+			<xs:element name="notes">
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="noteSpectateur" type="xs:string" minOccurs="0" maxOccurs="1"/>
+						<xs:element name="notePresse"	type="xs:string"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+
+			<xs:element name="intrigue" type="xs:string"/>
+
+			
+			<xs:element name="horaires">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="horaire">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element ref="jours" minOccurs="1" maxOccurs="unbounded"/>
+									<xs:element ref="heures"/>
+									</xs:sequence>
+								</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+
+<xs:element name="cinema">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="film" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+</xs:schema>

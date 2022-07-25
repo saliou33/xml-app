@@ -1,0 +1,35 @@
+.option1 {
+  position: absolute;
+  top: 22%;
+  left: 43%;
+  z-index: 10;
+}
+.option2 {
+  position: absolute;
+  top: 55%;
+  left: 30%;
+  z-index: 10;
+}
+.option3 {
+  position: absolute;
+  top: 55%;
+  right: 30%;
+  z-index: 10;
+}
+
+.back {
+  position:fixed;
+  z-index: 33;
+  top: 82vh;
+  right: 5rem;
+}
+
+#editor { 
+   width: 70%;
+   height: 25rem;
+}
+
+#message {
+    width: 70%;
+    height: 15rem;
+}

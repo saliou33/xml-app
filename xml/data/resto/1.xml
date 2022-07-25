@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fiche SYSTEM "../../resto.dtd">
+<fiche>
+    <coordonnées>
+        Lat:14.6937, Long:-17.44406
+    </coordonnées>
+    <nom>Serigne Saliou LO</nom>
+    <adresse> Liberte 6 extension </adresse>
+    <nomRestaurant>Peace Resto</nomRestaurant>
+    <description>
+        <important>Peace Resto</important>
+        <img url="peaceresto.sn" position="centre"/>
+        Un restaurant aux plats delicieux et variees...
+    </description>
+    <carte>
+        <plat type="plat">
+            <prix devise="XOF">1500</prix>
+            <descriptionPlat>
+                <paragraphe>
+                    Thiebou Diagua bou saff sapp té nekh
+                </paragraphe>
+                <important>Sauce Simple</important>
+                <important>Sauce Piment</important>
+            </descriptionPlat>
+        </plat>
+        <plat type="plat">
+            <prix devise="XOF">1300</prix>
+            <descriptionPlat>
+                <paragraphe>
+                    Thiebou Dieune Penda Mbaye
+                </paragraphe>
+                <important>Avec Sauce</important>
+                <important>Sans Sauce</important>
+            </descriptionPlat>
+        </plat>
+        <plat type="dessert">
+            <prix devise="XOF">250</prix>
+            <descriptionPlat>
+                <paragraphe>
+                    Jus Bissap
+                </paragraphe>
+            </descriptionPlat>
+        </plat>
+    </carte>
+
+    <menus ordre="prix">
+        <menu>
+            <titre>Repas Senegalaise</titre>
+            <prix devise="XOF">1800</prix>
+            <plats>
+                <plat type="plat">
+                    <prix devise="XOF">1300</prix>
+                    <descriptionPlat>
+                        <paragraphe>
+                            Thiebou Dieune Penda Mbaye
+                        </paragraphe>
+                        <important>Avec Sauce</important>
+                        <important>Sans Sauce</important>
+                    </descriptionPlat>
+                </plat>
+                <plat type="dessert">
+                    <prix devise="XOF">250</prix>
+                    <descriptionPlat>
+                        <paragraphe>
+                            Jus Bissap
+                        </paragraphe>
+                    </descriptionPlat>
+                </plat>
+            </plats>
+        </menu>
+    </menus>
+</fiche>

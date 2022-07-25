@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE cinema SYSTEM "../../cinema.dtd">
+<cinema>
+    <film>
+        <titre>Les Brigages de Tigre</titre>
+        <genre>Policier</genre>
+        <duree>2h 5min</duree>
+        <realisateur>
+            Jerôme Cornuau
+        </realisateur>
+        <annee>2005</annee>
+        <langue>VF</langue>
+        <acteurs>
+            <acteur>C. Cormillac</acteur>
+            <acteur>D. Kruger</acteur>
+            <acteur>E. Baer</acteur>
+        </acteurs>
+        <notes>
+            <noteSpectateur>4/5</noteSpectateur>
+            <notePresse>3/5</notePresse>
+        </notes>
+        <intrigue>
+            Les aventures du commissaire Valentin et des inspecteurs Terrasson et Pujol, 
+            membres des Brigades mobiles, corps spécial de la police française créé avant 
+            la Première Guerre mondiale.
+        </intrigue>
+        <horaires>
+            <horaire>
+                <jours>
+                    <jour libelle="Mer"/>
+                    <jour libelle="Sam"/>
+                </jours>
+                <heures>
+                    <heure> 14:00 </heure>
+                    <heure> 16:00 </heure>
+                    <heure> 19:00 </heure>
+                </heures>
+            </horaire>
+        </horaires>
+    </film>
+</cinema>

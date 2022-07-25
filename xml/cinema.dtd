@@ -1,0 +1,22 @@
+<!ELEMENT cinema (film+)>
+<!ELEMENT film (titre, genre, duree, realisateur, annee, langue, acteurs,
+ notes, intrigue, horaires+)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT duree (#PCDATA)>
+<!ELEMENT realisateur (#PCDATA)>
+<!ELEMENT annee (#PCDATA)>
+<!ELEMENT langue (#PCDATA)>
+<!ELEMENT acteurs (acteur+)>
+<!ELEMENT acteur (#PCDATA)>
+<!ELEMENT notes (noteSpectateur?, notePresse)>
+<!ELEMENT noteSpectateur (#PCDATA)>
+<!ELEMENT notePresse (#PCDATA)>
+<!ELEMENT intrigue (#PCDATA)>
+<!ELEMENT horaires (horaire+)>
+<!ELEMENT horaire (jours+, heures)>
+<!ELEMENT jours (jour+)>
+<!ELEMENT jour EMPTY>
+<!ATTLIST jour libelle (Lun|Mar|Mer|Jeu|Ven|Sam|Dim)  #REQUIRED>
+<!ELEMENT heures (heure+)>
+<!ELEMENT heure (#PCDATA)>

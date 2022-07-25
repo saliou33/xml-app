@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="liste">
+    <xs:complexType>
+        <xs:sequence>
+           <xs:element name="element" type="xs:string"/> 
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="paragraphe" type="xs:string" />
+<xs:element name="important" type="xs:string" />
+
+<xs:simpleType name="typeposition">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="droite"/>
+        <xs:enumeration value="gauche"/>
+        <xs:enumeration value="centre"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="img">
+    <xs:complexType>
+        <xs:attribute name="url" type="xs:string"/>
+        <xs:attribute name="position" type="typeposition"/>
+    </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="typeplat">
+    <xs:restriction  base="xs:string">
+        <xs:enumeration value="entrée"/>
+        <xs:enumeration value="dessert"/>
+        <xs:enumeration value="plat"/>
+        <xs:enumeration value="fromage"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="prix">
+    <xs:complexType>
+        <xs:attribute name="devise" type="xs:string"/>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="descriptionPlat">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="paragraphe"/>
+            <xs:element ref="important" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="plat">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="prix"/>
+            <xs:element ref="descriptionPlat" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="type" use="optional" type="typeplat"/>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="plats">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="plat" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="typeordremenu">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="prix"/>
+        <xs:enumeration value="choix"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="menu">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="titre" type="xs:string"/>
+            <xs:element ref ="prix"/>
+            <xs:element ref="plats"/>
+        </xs:sequence> 
+        <xs:attribute name="ordre" type="typeordremenu"/>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="fiche">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="coordonnées" type="xs:string"/>
+            <xs:element name="nom" type="xs:string"/>
+            <xs:element name="adresse" type="xs:string"/>
+            <xs:element name="nomRestaurant" type="xs:string"/>
+
+            <xs:element name="description" minOccurs="0">
+                <xs:complexType mixed="true">
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="liste"/>
+                        <xs:element ref="paragraphe"/>
+                        <xs:element ref="important"/>
+                        <xs:element ref="img" />
+                    </xs:choice>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="carte">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element ref="plat" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            
+            <xs:element name="menus" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element ref="menu" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>

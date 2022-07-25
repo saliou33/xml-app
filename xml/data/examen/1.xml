@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE examen SYSTEM "../../examen.dtd">
+<examen code="Lorem">
+    <titre>Quiz Anime</titre>
+    <date année="2021" mois="jul"/>
+    <questions>
+        <question>
+            <partie>
+                1
+            </partie>
+            <partie>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aliquid quas esse ea temporibus iste. 
+                <partie>
+                    recusandae dignissimos optio eligendi temporibus debitis molestias consectetur, dolor numquam veniam aperiam dolorum modi.
+                </partie> 
+            </partie>
+        </question>
+
+        <question>
+            <partie>
+                2
+            </partie>
+            <partie>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aliquid quas esse ea temporibus iste. 
+                <partie>
+                    recusandae dignissimos optio eligendi temporibus debitis molestias consectetur, dolor numquam veniam aperiam dolorum modi.
+                </partie> 
+            </partie>
+        </question>
+
+        <question>
+            <partie>
+                3
+            </partie>
+            <partie>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aliquid quas esse ea temporibus iste. 
+                <partie>
+                    recusandae dignissimos optio eligendi temporibus debitis molestias consectetur, dolor numquam veniam aperiam dolorum modi.
+                </partie> 
+            </partie>
+        </question>
+
+        <question>
+            <partie>
+                4
+            </partie>
+            <partie>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aliquid quas esse ea temporibus iste. 
+                <partie>
+                    recusandae dignissimos optio eligendi temporibus debitis molestias consectetur, dolor numquam veniam aperiam dolorum modi.
+                </partie> 
+            </partie>
+        </question>
+
+        <question>
+            <partie>
+                5
+            </partie>
+            <partie>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aliquid quas esse ea temporibus iste. 
+                <partie>
+                    recusandae dignissimos optio eligendi temporibus debitis molestias consectetur, dolor numquam veniam aperiam dolorum modi.
+                </partie> 
+            </partie>
+        </question>
+
+        <question>
+            <partie>
+                6
+            </partie>
+            <partie>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aliquid quas esse ea temporibus iste. 
+                <partie>
+                    recusandae dignissimos optio eligendi temporibus debitis molestias consectetur, dolor numquam veniam aperiam dolorum modi.
+                </partie> 
+            </partie>
+        </question>
+
+        <question>
+            <partie>
+                7
+            </partie>
+            <partie>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aliquid quas esse ea temporibus iste. 
+                <partie>
+                    recusandae dignissimos optio eligendi temporibus debitis molestias consectetur, dolor numquam veniam aperiam dolorum modi.
+                </partie> 
+            </partie>
+        </question>
+
+        <question>
+            <partie>
+                8
+            </partie>
+            <partie>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aliquid quas esse ea temporibus iste. 
+                <partie>
+                    recusandae dignissimos optio eligendi temporibus debitis molestias consectetur, dolor numquam veniam aperiam dolorum modi.
+                </partie> 
+            </partie>
+        </question>
+
+        <question>
+            <partie>
+                9
+            </partie>
+            <partie>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aliquid quas esse ea temporibus iste. 
+                <partie>
+                    recusandae dignissimos optio eligendi temporibus debitis molestias consectetur, dolor numquam veniam aperiam dolorum modi.
+                </partie> 
+            </partie>
+        </question>
+
+        <question>
+            <partie>
+                10
+            </partie>
+            <partie>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aliquid quas esse ea temporibus iste. 
+                <partie>
+                    recusandae dignissimos optio eligendi temporibus debitis molestias consectetur, dolor numquam veniam aperiam dolorum modi.
+                </partie> 
+            </partie>
+        </question>
+    </questions>
+</examen>
