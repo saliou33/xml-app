@@ -64,7 +64,6 @@
 			</xs:element>
 
 			<xs:element name="intrigue" type="xs:string"/>
-
 			
 			<xs:element name="horaires">
 				<xs:complexType>
