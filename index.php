@@ -17,5 +17,5 @@ switch($page){
         get($page);
         break;
     default:
-        header("Location: /xml_app/home");
+        header("Location: /xml-app/home");
 }
